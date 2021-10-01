@@ -9,19 +9,24 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
     <title>Calculator App</title>
 </head>
 
 <body>
     <h1>The Alculator</h1>
-    <main>
+
 
         <div class="calculation">
             <h2>Addition</h2>
             <input id="add-input-1" type="text">
             +
             <input id="add-input-2" type="text">
-            <button id="add-btn">Add</button>
+            <button class="button" id="add-btn">Add</button>
             =
             <span id="add-output"></span>
         </div>    
@@ -31,7 +36,7 @@
             <input id="sub-input-1" type="text">
             -
             <input id="sub-input-2" type="text" >
-            <button id="sub-btn">Subtract</button>
+            <button class="button" id="sub-btn">Subtract</button>
             =
             <span id="sub-output"></span>
         </div>
@@ -41,7 +46,7 @@
             <input id="multi-input-1" type="text">
             *
             <input id="multi-input-2" type="text">
-            <button id="multi-btn">Multiply</button>
+            <button class="button" id="multi-btn">Multiply</button>
             =
             <span id="multi-output"></span>
         </div>
@@ -51,7 +56,7 @@
             <input id="divide-input-1" type="text">
             /
             <input id="divide-input-2" type="text">
-            <button id="divide-btn">Divide</button>
+            <button class="button" id="divide-btn">Divide</button>
             =
             <span id="divide-output"></span>
         </div>
