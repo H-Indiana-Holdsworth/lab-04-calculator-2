@@ -40,10 +40,9 @@ subButton.addEventListener('click', () => {
 });
 
 multiButton.addEventListener('click', () => {
-  console.log('clicked');
-    /*const value1 = Number(multiInput1.value);
+    const value1 = Number(multiInput1.value);
     const value2 = Number(multiInput2.value);
     const result = multi(value1, value2);
-    multiOutput.textContent = result;*/
+    multiOutput.textContent = result;
 });
 
