@@ -2,6 +2,7 @@
 import { add } from './calculations.js';
 import { sub } from './calculations.js';
 import { multi } from './calculations.js';
+import { divide } from './calculations.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -17,6 +18,11 @@ const multiInput1 = document.getElementById('multi-input-1');
 const multiInput2 = document.getElementById('multi-input-2');
 const multiButton = document.getElementById('multi-btn');
 const multiOutput = document.getElementById('multi-output');
+
+const divideInput1 = document.getElementById('divide-input-1');
+const divideInput2 = document.getElementById('divide-input-2');
+const divideButton = document.getElementById('divide-btn');
+const divideOutput = document.getElementById('divide-output');
 
 // initialize global state
 
@@ -46,3 +52,9 @@ multiButton.addEventListener('click', () => {
     multiOutput.textContent = result;
 });
 
+divideButton.addEventListener('click', () => {
+    const value1 = Number(divideInput1.value);
+    const value2 = Number(divideInput2.value);
+    const result = divide(value1, value2);
+    divideOutput.textContent = result;
+});
